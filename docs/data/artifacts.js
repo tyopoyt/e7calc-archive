@@ -6,7 +6,8 @@ const artifactDmgType = {
   critDmgBoost: 'crit-dmg-boost',
   fixedDamage: 'fixedDamage',
   flat: 'flat',
-  dot: 'dot'
+  dot: 'dot',
+  health_only: 'health_only'
 };
 
 const artifacts = {
@@ -80,6 +81,14 @@ const artifacts = {
     scale: [0.08, 0.088, 0.096, 0.104, 0.112, 0.12, 0.128, 0.136, 0.144, 0.152, 0.16],
     type: artifactDmgType.penetrate,
     exclusive: classType.knight
+  },
+  // TODO: handle barrier from this arti
+  dark_blood_keeper: {
+    id: 'dark_blood_keeper',
+    name: 'Dark Blood Keeper',
+    type: artifactDmgType.attack,
+    exclusive: classType.thief,
+    value: () => 0.15
   },
   daydream_joker: {
     id: 'daydream_joker',
@@ -392,6 +401,14 @@ const artifacts = {
     dot: [dot.bomb],
     exclusive: classType.ranger
   },
+  sweet_miracle: {
+    id: 'sweet_miracle',
+    name: 'Sweet Miracle',
+    maxHP: 1.1,
+    scale: [1.05, 1.055, 1.06, 1.065, 1.07, 1.075, 1.08, 1.085, 1.09, 1.095, 1.1],
+    exclusive: classType.warrior,
+    type: artifactDmgType.health_only
+  },
   sword_of_cycling_seasons: {
     id: 'sword_of_cycling_seasons',
     name: 'Sword of Cycling Seasons',
@@ -481,9 +498,7 @@ const artifacts = {
     info: infoLabel('victorious_flag'),
     applies: (skill) => {
       const hero = heroes[document.getElementById('hero').value];
-      if (hero.element === element.dark || hero.element === element.light) return false;
-
-      return (document.getElementById('elem-adv').checked || ((skill.elemAdv !== undefined) && skill.elemAdv() === true));
+      return  !(hero.element === element.dark || hero.element === element.light);
     }
   },
   violet_talisman: {

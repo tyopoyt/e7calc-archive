@@ -157,7 +157,7 @@ const i18n = {
       beehoo_incinerate: 'Incinerate',
       kane_rock_smash: 'Rock Smash',
       lethe_call_of_the_abyss: 'Call of the Abyss',
-      lqc_s3_splash: 'S3 Splash',
+      s3_splash: 'S3 Splash',
       ml_celine_nimble_sword: 'Nimble Sword',
       ml_kayron_flash_slash: 'Flash Slash',
       navy_captain_landy_salvo_fire: 'Salvo Fire',
@@ -179,11 +179,9 @@ const i18n = {
     heroes: {
       // Unreleased units: (未発表)
       // Pre-Balance versions: (前のバージョン)
-      eligos_old: 'エリコス (前のバージョン)',
-      inferno_khawazu_old: '狂炎のカワズ (前のバージョン)',
-      martial_artist_ken_old: '覇者 ケン (前のバージョン)',
-      moon_bunny_dominiel_old: '月うさぎ ドミニエル (前のバージョン)',
-      twisted_eidolon_kayron_old: '歪みし亡霊 カイロン (前のバージョン)',
+      top_model_luluca_old: '最強モデル ルルカ (前のバージョン)',
+      requiem_roana_old: '鎮魂のロエンナ (前のバージョン)',
+      clarissa_old: 'クラリッサ (前のバージョン)',
       // End Pre-Balance
       abigail: 'アビゲイル',
       abyssal_yufine: '深淵のユピネ',
@@ -289,6 +287,7 @@ const i18n = {
       emilia:'エミリア', 
       enott: 'エノット',
       ervalen: 'エルバレン',
+      eternal_wanderer_ludwig: '',
       fairytale_tenebria: 'メルヘン テネブレア',
       faithless_lidica: '不信者 リディカ',
       falconer_kluri: '鷹狩のクルリ',
@@ -647,7 +646,7 @@ const i18n = {
       silk_automatic_fire: 'バーストショット',
       kane_rock_smash: 'ロックスマッシュ',
       lethe_call_of_the_abyss: '深淵の呼び声',
-      lqc_s3_splash: 'S3 スプラッシュダメージ',
+      s3_splash: 'S3 スプラッシュダメージ',
       ml_celine_nimble_sword: '快剣',
       navy_captain_landy_salvo_fire: '一斉射擊',
       s1_extra_attack: 'S1 追加攻撃',
@@ -665,11 +664,9 @@ const i18n = {
     heroes: {
       // Unreleased units: (未發布)
       // Pre-Balance versions: (以前的版本)
-      eligos: '艾利戈斯 (以前的版本)',
-      inferno_khawazu_old: '烈焰的卡瓦朱 (以前的版本)',
-      martial_artist_ken_old: '武鬥家肯恩 (以前的版本)',
-      moon_bunny_dominiel_old: '月兔多米妮爾 (以前的版本)',
-      twisted_eidolon_kayron_old: '扭曲的亡靈凱隆 (以前的版本)',
+      top_model_luluca_old: '最強模特兒璐璐卡 (以前的版本)',
+      requiem_roana_old: '鎮魂的羅安納 (以前的版本)',
+      clarissa_old: '克萊莉莎 (以前的版本)',
       // End Pre-Balance
       abigail: '雅碧凱',
       abyssal_yufine: '深淵優芬妮',
@@ -775,6 +772,7 @@ const i18n = {
       emilia: '愛蜜莉雅',
       enott: '艾諾特',
       ervalen: '艾爾巴倫',
+      eternal_wanderer_ludwig: '永劫漂流者魯特比',
       fairytale_tenebria: '童話泰妮布里雅',
       faithless_lidica: '無神論者麗迪卡',
       falconer_kluri: '鷹獵人可露莉',
@@ -812,7 +810,7 @@ const i18n = {
       judge_kise: '審判者綺世',
       judith: '茱迪絲',
       juni: '珠妮',
-      kane: '該隱',
+      kane: 'ケイン',
       kanna: '暴擊型卡農',
       karin: '卡琳',
       kawerik: '卡威利',
@@ -1368,7 +1366,7 @@ const i18n = {
       silk_automatic_fire: '連發射擊',
       kane_rock_smash: '碎岩重擊',
       lethe_call_of_the_abyss: '深淵的呼喚',
-      lqc_s3_splash: 'S3 濺射傷害',
+      s3_splash: 'S3 濺射傷害',
       ml_celine_nimble_sword: '快劍',
       navy_captain_landy_salvo_fire: '全軍射擊',
       s1_extra_attack: 'S1 追加攻擊',
@@ -1385,11 +1383,9 @@ const i18n = {
     heroes: {
       // Unreleased units: (未发布)
       // Pre-Balance versions: (以前的版本)
-      eligos: '艾利戈斯 (以前的版本)',
-      inferno_khawazu_old: '烈焰的卡瓦朱 (以前的版本)',
-      martial_artist_ken_old: '武斗家肯恩 (以前的版本)',
-      moon_bunny_dominiel_old: '月兔多米妮尔 (以前的版本)',
-      twisted_eidolon_kayron_old: '扭曲亡灵凯隆 (以前的版本)',
+      top_model_luluca_old: '最强模特儿璐璐卡 (以前的版本)',
+      requiem_roana_old: '鎮魂的羅安納 (以前的版本)',
+      clarissa_old: '克莱莉莎 (以前的版本)',
       // End Pre-Balance
       abigail: '雅碧凱',
       abyssal_yufine: '深淵優芬妮', // TODO: Simplified when available
@@ -1495,6 +1491,7 @@ const i18n = {
       emilia:'爱蜜莉雅',
       enott: '艾诺特',
       ervalen: '艾尔巴伦',
+      eternal_wanderer_ludwig: '永劫漂流者魯特比', // TODO: simplified when available
       fairytale_tenebria: '童话泰妮布里雅',
       faithless_lidica: '无神论者丽迪卡',
       falconer_kluri: '鹰猎人可露莉',
@@ -2089,7 +2086,7 @@ const i18n = {
       beehoo_incinerate: '焚烧',
       kane_rock_smash: '碎岩重擊', // TODO: Simplified when avaialble
       lethe_call_of_the_abyss: '深渊呼唤',
-      lqc_s3_splash: 'S3 溅射伤害',
+      s3_splash: 'S3 溅射伤害',
       ml_celine_nimble_sword: '快剑',
       navy_captain_landy_salvo_fire: '全軍射擊', // TODO: Simplified when available
       s1_extra_attack: 'S1 追加攻击',
@@ -2107,11 +2104,9 @@ const i18n = {
     heroes: {
       // Unreleased units: (미공개)
       // Pre-Balance versions: (이전 버전)
-      eligos: '엘리고스 (이전 버전)',
-      inferno_khawazu_old: '광염의 카와주 (이전 버전)',
-      martial_artist_ken_old: '무투가 켄 (이전 버전)',
-      moon_bunny_dominiel_old: '달토끼 도미니엘 (이전 버전)',
-      twisted_eidolon_kayron_old: '뒤틀린 망령 카일론 (이전 버전)',
+      top_model_luluca_old: '최강 모델 루루카 (이전 버전)',
+      requiem_roana_old: '진혼의 로앤나 (이전 버전)',
+      clarissa_old: '클라릿사 (이전 버전)',
       // End Pre-Balance
       abigail: '아비게일',
       abyssal_yufine: '심연의 유피네',
@@ -2221,6 +2216,7 @@ const i18n = {
       emilia: '에밀리아',
       enott: '에노트',
       ervalen: '에르발렌',
+      eternal_wanderer_ludwig: '영겁의 표류자 루트비히',
       fairytale_tenebria: '메르헨 테네브리아',
       faithless_lidica: '불신자 리디카',
       falconer_kluri: '매사냥꾼 쿠루리',
@@ -2739,7 +2735,7 @@ const i18n = {
       silk_automatic_fire: '연발 사격',
       kane_rock_smash: '록 스매시',
       lethe_call_of_the_abyss: '심연의 부름',
-      lqc_s3_splash: '스킬 3 스플래시',
+      s3_splash: '스킬 3 스플래시',
       ml_celine_nimble_sword: '쾌검',
       navy_captain_landy_salvo_fire: '일제 사격',
       s1_extra_attack: '스킬 1 추가 공격',
@@ -2757,11 +2753,9 @@ const i18n = {
     heroes: {
       // Unreleased units: (Unidades) (Não Lançadas)
       // Pre-Balance versions: (Versão) (Pré-Balanceamento)
-      eligos: 'Eligós (Pré-Balanceamento)',
-      inferno_khawazu_old: 'Khawazu Infernal (Pré-Balanceamento)',
-      martial_artist_ken_old: 'Artista Marcial Ken (Pré-Balanceamento)',
-      moon_bunny_dominiel_old: 'Dominiel Coelhinha Lunar (Pré-Balanceamento)',
-      twisted_eidolon_kayron_old: 'Espírito Distorcido Kayron (Pré-Balanceamento)',
+      top_model_luluca_old: 'Luluca Supermodelo (Pré-Balanceamento)',
+      requiem_roana_old: 'Requiem Roana (Pré-Balanceamento)',
+      clarissa_old: 'Clarissa (Pré-Balanceamento)',
       // End Pre-Balance
       abigail: 'Abigail',
       abyssal_yufine: '', // TODO: translate when available
@@ -2867,6 +2861,7 @@ const i18n = {
       emilia: 'Emilia',
       enott: 'Enott',
       ervalen: 'Ervalen',
+      eternal_wanderer_ludwig: 'Eternal Wanderer Ludwig', // TODO: Translate when available
       fairytale_tenebria: 'Tenébria das Fábulas',
       faithless_lidica: 'Lídica Infiel',
       falconer_kluri: 'Falconeira Kluri',
@@ -3307,7 +3302,7 @@ const i18n = {
       silk_automatic_fire: 'Disparo Automático',
       kane_rock_smash: '', // TODO: Translate when available
       lethe_call_of_the_abyss: 'Chamado do Abismo',
-      lqc_s3_splash: 'S3 Splash',
+      s3_splash: 'S3 Splash',
       ml_celine_nimble_sword: 'Fulgor',
       navy_captain_landy_salvo_fire: 'Salva de Tiros',
       s1_extra_attack: 'S1 Ataque Extra',

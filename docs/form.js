@@ -307,7 +307,11 @@ const elements = {
       if (currentHero.hp) {
         return currentHero.getHP();
       }
-      return Number(document.getElementById('caster-max-hp').value) * (artifacts[currentArtifact.id]?.maxHP ? artifacts[currentArtifact.id]?.maxHP : 1);
+
+      const artifactObject = artifacts[currentArtifact.id];
+      const artifactHP = (artifactObject?.type === artifactDmgType.health_only && artifactObject.scale?.length) ? artifactObject.scale[Math.floor(inputValues['artifact-lvl']/3)] : (artifactObject?.maxHP || 1);
+
+      return Number(document.getElementById('caster-max-hp').value) * artifactHP;
     }
   },
   caster_hp_pc: {
@@ -332,6 +336,26 @@ const elements = {
     default: 10000,
     value: () => Number(document.getElementById('caster-hp').value)
   },
+  caster_elemental_wisdom_stack: {
+    ref: 'caster_elemental_wisdom_stack',
+    id: 'caster-elemental-wisdom-stack',
+    label: 'Elemental Wisdom Stack',
+    type: 'slider',
+    min: 0,
+    max: 3,
+    default: 0,
+    value: () => Number(document.getElementById('caster-elemental-wisdom-stack').value)
+  },
+  soulburn_stack: {
+    ref: 'soulburn_stack',
+    id: 'soulburn-stack',
+    label: 'Soulburn Stack',
+    type: 'slider',
+    min: 0,
+    max: 2,
+    default: 0,
+    value: () => Number(document.getElementById('soulburn-stack').value)
+  },
   caster_hp_above_50pc: {
     ref: 'caster_hp_above_50pc',
     id: 'caster-hp-above-50pc',
@@ -339,6 +363,14 @@ const elements = {
     type: 'checkbox',
     value: () => document.getElementById('caster-hp-above-50pc').checked,
     default: true,
+  },
+  caster_below_30_percent_hp: {
+    ref: 'caster_below_30_percent_hp',
+    id: 'caster-below-30-percent-hp',
+    label: 'Caster\'s HP below 30%',
+    type: 'checkbox',
+    value: () => document.getElementById('caster-below-30-percent-hp').checked,
+    default: false,
   },
   target_defense: {
     ref: 'target_defense',
@@ -389,7 +421,14 @@ const elements = {
       if (currentHero.spd) {
         return currentHero.getSpd();
       }
-      return Number(document.getElementById('caster-speed').value) * (elements.caster_speed_up.value() ? battleConstants.spdUp : 1);
+
+      let spdUp = 1;
+
+      if (currentHero.spdUp) {
+        spdUp = currentHero.spdUp();
+      }
+
+      return Number(document.getElementById('caster-speed').value) * (elements.caster_speed_up.value() ? battleConstants.spdUp : 1) * spdUp;
     }
   },
   caster_speed_up: {
@@ -461,6 +500,14 @@ const elements = {
     type: 'checkbox',
     value: () => document.getElementById('caster-has-bzzt').checked,
     icon: './assets/buffs/bzzt-buff.png'
+  },
+  caster_has_cascade: {
+    ref: 'caster_has_cascade',
+    id: 'caster-has-cascade',
+    label: 'Cascade',
+    type: 'checkbox',
+    value: () => document.getElementById('caster-has-cascade').checked,
+    icon: './assets/buffs/cascade-buff.png'
   },
   caster_has_debuff: {
     ref: 'caster_has_debuff',
@@ -554,6 +601,14 @@ const elements = {
     type: 'checkbox',
     value: () => document.getElementById('caster-perception') ? document.getElementById('caster-perception').checked : false,
     icon: './assets/buffs/perception-buff.png'
+  },
+  caster_possession: {
+    ref: 'caster_possession',
+    id: 'caster-possession',
+    label: 'Caster has Possession',
+    type: 'checkbox',
+    value: () => document.getElementById('caster-possession') ? document.getElementById('caster-possession').checked : false,
+    icon: './assets/buffs/possession-buff.png'
   },
   caster_vigor: {
     value: () => document.getElementById('vigor') ? document.getElementById('vigor').checked : false,
@@ -819,6 +874,17 @@ const elements = {
     default: 0,
     readonly: true,
     value: () => Number(document.getElementById('enemy-counters').value)
+  },
+  enemy_number_of_debuffs: {
+    ref: 'enemy_number_of_debuffs',
+    id: 'enemy-number-of-debuffs',
+    label: 'Number of Debuffs on Enemies',
+    type: 'slider',
+    min: 0,
+    max: 10,
+    default: 0,
+    readonly: true,
+    value: () => Number(document.getElementById('enemy-number-of-debuffs').value)
   },
   highest_ally_attack: {
     ref: 'highest_ally_attack',

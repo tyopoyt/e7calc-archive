@@ -1,5 +1,25 @@
 ## Changelog
 
+### <strong>Mar 15 2024 Update:</strong>
+Added Jenua and Dark Blood Keeper.  Updated Heroes and Artifacts included in 3/14 balance patch.
+### <strong>Feb 27 2024 Update:</strong>
+Added Beehoo EE.
+### <strong>Feb 1 2024 Update:</strong>
+Added Laia and Sweet Miracle.
+### <strong>Jan 18 2024 Update:</strong>
+Added changes from 01/2024 Balance patch.
+### <strong>Jan 4 2024 Update:</strong>
+- Added Dragon King Sharun, Elvira, and Leah.
+### <strong>Dec 21 2023 Update:</strong>
+- Added Blooming Lidica.
+### <strong>Dec 7 2023 Update:</strong>
+- Added Byblis.
+### <strong>Nov 23 2023 Update:</strong>
+- Added Eternal Wanderer Ludwig. Updated Serila and Lone Crescent Bellona, and Death Dealer Ray from Balance Patch.
+### <strong>Nov 11 2023 Update:</strong>
+- Added Fumyr.
+### <strong>Oct 26 2023 Update:</strong>
+- Added Claudia, Emiki, Ezra, and Arunka's EE.
 ### <strong>Oct 12 2023 Update:</strong>
 - Added Abyssal Yufine, Kane, and Tyrant's Descent.
 ### <strong>Sept 29 2023:</strong>
